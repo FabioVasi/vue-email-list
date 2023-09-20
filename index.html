@@ -8,10 +8,13 @@
 <body>
     
     <div id="app">
+
+        <h1>List of a random Emails</h1>
         
         <ol>
-            <li v-for="email in randomEmails">{{email}}</li>
+            <li style="padding: 0.5rem; font-size: 20px;" v-for="email in randomEmails"><a href="#">{{email}}</a></li>
         </ol>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>

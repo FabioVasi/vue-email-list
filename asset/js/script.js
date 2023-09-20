@@ -26,7 +26,7 @@ createApp({
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then(response => {
             console.log(response);
-            this.randomEmails = response.data.response;
+            this.randomEmails.push(response.data.response);
             
         })
     }
