@@ -11,8 +11,8 @@
 
         <h1>List of a random Emails</h1>
         
-        <ol>
-            <li style="padding: 0.5rem; font-size: 20px;" v-for="email in randomEmails"  v-if="randomEmails.length == 10"><a href="#">{{email}}</a></li>
+        <ol v-if="randomEmails.length == 10">
+            <li style="padding: 0.5rem; font-size: 20px;" v-for="email in randomEmails"><a href="#">{{email}}</a></li>
         </ol>
 
     </div>
